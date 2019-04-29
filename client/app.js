@@ -4,7 +4,7 @@ App({
   onLaunch() {
     console.log('onLaunch', performance.now());
     sdk.init({
-      "appId": '',
+      "appKey": '',
       "secret": '',
       "envId": ''
     });

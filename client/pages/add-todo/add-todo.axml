@@ -1,0 +1,18 @@
+<view class="page-add-todo">
+
+  <view class="add-todo">
+    <image a:if="{{ iconUrl }}" onTap="uploadImg" class="image-upload" src="{{ iconUrl }}" mode="scaleToFill" />
+    <image a:else onTap="uploadImg" class="image-upload image-upload-placeholder" src="https://gw.alicdn.com/tfs/TB1dU.ruYvpK1RjSZPiXXbmwXXa-201-200.png" mode="scaleToFill" />
+    <input 
+      class="add-todo-input"
+      placeholder="What needs to be done?"
+      onBlur="onBlur"
+      value="{{inputValue}}"
+    />
+  </view>
+
+  <view class="todo-footer">
+    <add-button text="Add Todo" onClickMe="add" ></add-button>
+  </view>
+  
+</view>
